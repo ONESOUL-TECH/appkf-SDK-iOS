@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C024F4971BB10B9B00693184 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C024F4961BB10B9B00693184 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
+		C0ADDF8D1BB0FC5700873F18 /* QZUCC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0ADDF8B1BB0FC5700873F18 /* QZUCC.bundle */; settings = {ASSET_TAGS = (); }; };
+		C0ADDF8E1BB0FC5700873F18 /* QZUCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ADDF8C1BB0FC5700873F18 /* QZUCC.framework */; settings = {ASSET_TAGS = (); }; };
+		DC189C4B1BA80D6900A3582D /* detail_sms_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */; };
+		DC9CA2871BAFAA8500F53C7E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */; };
+		DCB197151BA11215007163C9 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB197121BA11215007163C9 /* Icon-60@2x.png */; };
+		DCB197161BA11215007163C9 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB197131BA11215007163C9 /* Icon.png */; };
+		DCB197171BA11215007163C9 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB197141BA11215007163C9 /* Icon@2x.png */; };
+		DCD697E61A8C3C910037116A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD697E51A8C3C910037116A /* main.m */; };
+		DCD697E91A8C3C910037116A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD697E81A8C3C910037116A /* AppDelegate.m */; };
+		DCD698481A8C402A0037116A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD698471A8C402A0037116A /* UIKit.framework */; };
+		DCD6984B1A8C40320037116A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD698491A8C40320037116A /* CoreFoundation.framework */; };
+		DCD6984C1A8C40320037116A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6984A1A8C40320037116A /* Foundation.framework */; };
+		DCD6984E1A8C40710037116A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6984D1A8C40710037116A /* libsqlite3.dylib */; };
+		DCD698501A8C408F0037116A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6984F1A8C408F0037116A /* libxml2.dylib */; };
+		DCD698541A8C40D80037116A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD698531A8C40D80037116A /* CFNetwork.framework */; };
+		DCD6985C1A8C410C0037116A /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD6985B1A8C410C0037116A /* CoreText.framework */; };
+		DCD698621A8C41630037116A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD698611A8C41630037116A /* AVFoundation.framework */; };
+		DCD698661A8C41880037116A /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD698651A8C41880037116A /* libicucore.dylib */; };
+		DCD698681A8C41990037116A /* libresolv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DCD698671A8C41990037116A /* libresolv.dylib */; };
+		DCFA74351BA124DC00B7A09C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFA74321BA124DC00B7A09C /* Default-568h@2x.png */; };
+		DCFA74361BA124DC00B7A09C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFA74331BA124DC00B7A09C /* Default.png */; };
+		DCFA74371BA124DC00B7A09C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCFA74341BA124DC00B7A09C /* Default@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C024F4951BB10B9B00693184 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		C024F4961BB10B9B00693184 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		C0ADDF8B1BB0FC5700873F18 /* QZUCC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = QZUCC.bundle; path = sdk/QZUCC.bundle; sourceTree = "<group>"; };
+		C0ADDF8C1BB0FC5700873F18 /* QZUCC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QZUCC.framework; path = sdk/QZUCC.framework; sourceTree = "<group>"; };
+		DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail_sms_enable@2x.png"; sourceTree = "<group>"; };
+		DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
+		DCB197121BA11215007163C9 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
+		DCB197131BA11215007163C9 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		DCB197141BA11215007163C9 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		DCD697E01A8C3C910037116A /* CSIMDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSIMDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCD697E41A8C3C910037116A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCD697E51A8C3C910037116A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DCD697E71A8C3C910037116A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DCD697E81A8C3C910037116A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DCD698471A8C402A0037116A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		DCD698491A8C40320037116A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DCD6984A1A8C40320037116A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DCD6984D1A8C40710037116A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		DCD6984F1A8C408F0037116A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		DCD698531A8C40D80037116A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		DCD6985B1A8C410C0037116A /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		DCD698611A8C41630037116A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DCD698651A8C41880037116A /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		DCD698671A8C41990037116A /* libresolv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libresolv.dylib; path = usr/lib/libresolv.dylib; sourceTree = SDKROOT; };
+		DCFA74321BA124DC00B7A09C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DCFA74331BA124DC00B7A09C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		DCFA74341BA124DC00B7A09C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCD697DD1A8C3C910037116A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC9CA2871BAFAA8500F53C7E /* libz.1.2.5.dylib in Frameworks */,
+				DCD698681A8C41990037116A /* libresolv.dylib in Frameworks */,
+				DCD698661A8C41880037116A /* libicucore.dylib in Frameworks */,
+				DCD698621A8C41630037116A /* AVFoundation.framework in Frameworks */,
+				DCD6985C1A8C410C0037116A /* CoreText.framework in Frameworks */,
+				DCD698541A8C40D80037116A /* CFNetwork.framework in Frameworks */,
+				DCD698501A8C408F0037116A /* libxml2.dylib in Frameworks */,
+				DCD6984E1A8C40710037116A /* libsqlite3.dylib in Frameworks */,
+				DCD6984B1A8C40320037116A /* CoreFoundation.framework in Frameworks */,
+				C0ADDF8E1BB0FC5700873F18 /* QZUCC.framework in Frameworks */,
+				DCD6984C1A8C40320037116A /* Foundation.framework in Frameworks */,
+				DCD698481A8C402A0037116A /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC9CA2841BAFA99600F53C7E /* OS-CSIM-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C0ADDF8B1BB0FC5700873F18 /* QZUCC.bundle */,
+				C0ADDF8C1BB0FC5700873F18 /* QZUCC.framework */,
+			);
+			name = "OS-CSIM-SDK";
+			sourceTree = "<group>";
+		};
+		DCB197111BA111A1007163C9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */,
+				DCFA74311BA124DC00B7A09C /* Launch-Ent */,
+				DCB197121BA11215007163C9 /* Icon-60@2x.png */,
+				DCB197131BA11215007163C9 /* Icon.png */,
+				DCB197141BA11215007163C9 /* Icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		DCD697D71A8C3C910037116A = {
+			isa = PBXGroup;
+			children = (
+				DCD697E21A8C3C910037116A /* CSIMDemo */,
+				DC9CA2841BAFA99600F53C7E /* OS-CSIM-SDK */,
+				DCD6986C1A8C41F80037116A /* Framework */,
+				DCD697E11A8C3C910037116A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCD697E11A8C3C910037116A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCD697E01A8C3C910037116A /* CSIMDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCD697E21A8C3C910037116A /* CSIMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C024F4951BB10B9B00693184 /* MainViewController.h */,
+				C024F4961BB10B9B00693184 /* MainViewController.m */,
+				DCD697E71A8C3C910037116A /* AppDelegate.h */,
+				DCD697E81A8C3C910037116A /* AppDelegate.m */,
+				DCB197111BA111A1007163C9 /* Resources */,
+				DCD697E31A8C3C910037116A /* Supporting Files */,
+			);
+			name = CSIMDemo;
+			path = QZUCCDemo;
+			sourceTree = "<group>";
+		};
+		DCD697E31A8C3C910037116A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DCD697E41A8C3C910037116A /* Info.plist */,
+				DCD697E51A8C3C910037116A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DCD6986B1A8C41ED0037116A /* Linked */ = {
+			isa = PBXGroup;
+			children = (
+				DCD698651A8C41880037116A /* libicucore.dylib */,
+				DCD698671A8C41990037116A /* libresolv.dylib */,
+				DCD6984D1A8C40710037116A /* libsqlite3.dylib */,
+				DCD6984F1A8C408F0037116A /* libxml2.dylib */,
+				DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */,
+				DCD698611A8C41630037116A /* AVFoundation.framework */,
+				DCD698531A8C40D80037116A /* CFNetwork.framework */,
+				DCD698491A8C40320037116A /* CoreFoundation.framework */,
+				DCD6985B1A8C410C0037116A /* CoreText.framework */,
+				DCD6984A1A8C40320037116A /* Foundation.framework */,
+				DCD698471A8C402A0037116A /* UIKit.framework */,
+			);
+			name = Linked;
+			sourceTree = "<group>";
+		};
+		DCD6986C1A8C41F80037116A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				DCD6986B1A8C41ED0037116A /* Linked */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		DCFA74311BA124DC00B7A09C /* Launch-Ent */ = {
+			isa = PBXGroup;
+			children = (
+				DCFA74321BA124DC00B7A09C /* Default-568h@2x.png */,
+				DCFA74331BA124DC00B7A09C /* Default.png */,
+				DCFA74341BA124DC00B7A09C /* Default@2x.png */,
+			);
+			path = "Launch-Ent";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCD697DF1A8C3C910037116A /* CSIMDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCD698061A8C3C910037116A /* Build configuration list for PBXNativeTarget "CSIMDemo" */;
+			buildPhases = (
+				DCD697DC1A8C3C910037116A /* Sources */,
+				DCD697DD1A8C3C910037116A /* Frameworks */,
+				DCD697DE1A8C3C910037116A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CSIMDemo;
+			productName = QZUCCDemo;
+			productReference = DCD697E01A8C3C910037116A /* CSIMDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCD697D81A8C3C910037116A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = onesoul.cn;
+				TargetAttributes = {
+					DCD697DF1A8C3C910037116A = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = DCD697DB1A8C3C910037116A /* Build configuration list for PBXProject "CSIMDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCD697D71A8C3C910037116A;
+			productRefGroup = DCD697E11A8C3C910037116A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCD697DF1A8C3C910037116A /* CSIMDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCD697DE1A8C3C910037116A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC189C4B1BA80D6900A3582D /* detail_sms_enable@2x.png in Resources */,
+				DCFA74371BA124DC00B7A09C /* Default@2x.png in Resources */,
+				C0ADDF8D1BB0FC5700873F18 /* QZUCC.bundle in Resources */,
+				DCB197161BA11215007163C9 /* Icon.png in Resources */,
+				DCB197171BA11215007163C9 /* Icon@2x.png in Resources */,
+				DCB197151BA11215007163C9 /* Icon-60@2x.png in Resources */,
+				DCFA74361BA124DC00B7A09C /* Default.png in Resources */,
+				DCFA74351BA124DC00B7A09C /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCD697DC1A8C3C910037116A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD697E91A8C3C910037116A /* AppDelegate.m in Sources */,
+				C024F4971BB10B9B00693184 /* MainViewController.m in Sources */,
+				DCD697E61A8C3C910037116A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCD698041A8C3C910037116A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DCD698051A8C3C910037116A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCD698071A8C3C910037116A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/sdk",
+				);
+				INFOPLIST_FILE = QZUCCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onesoul.kfdemo;
+				PRODUCT_NAME = CSIMDemo;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+			};
+			name = Debug;
+		};
+		DCD698081A8C3C910037116A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = armv7;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/sdk",
+				);
+				INFOPLIST_FILE = QZUCCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.onesoul.kfdemo;
+				PRODUCT_NAME = CSIMDemo;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = armv7;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCD697DB1A8C3C910037116A /* Build configuration list for PBXProject "CSIMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD698041A8C3C910037116A /* Debug */,
+				DCD698051A8C3C910037116A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCD698061A8C3C910037116A /* Build configuration list for PBXNativeTarget "CSIMDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCD698071A8C3C910037116A /* Debug */,
+				DCD698081A8C3C910037116A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DCD697D81A8C3C910037116A /* Project object */;
+}

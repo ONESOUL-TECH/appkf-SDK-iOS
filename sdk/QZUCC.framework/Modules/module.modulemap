@@ -1,0 +1,6 @@
+framework module QZUCC {
+  umbrella header "QZUCC.h"
+
+  export *
+  module * { export * }
+}
