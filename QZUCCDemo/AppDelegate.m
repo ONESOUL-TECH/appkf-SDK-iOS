@@ -10,7 +10,7 @@
 
 #import "MainViewController.h"
 
-#import <QZUCC/QZUCC.h>
+#import "QZUCC.h"
 
 #define kDemoServer @"os.qyucc.com:809"
 #define kDemoUser @"200000211101"
@@ -61,7 +61,7 @@
     [self configureUIStyle];
     
     //Step:1
-    [QZUCC initWithAbility:@"[\"IM\",\"Phone\",\"Agent\"]" delegate:self];
+    [QZUCC initWithAbility:@"" bundle:@"Onesoul-IM-SDK-Bundle.bundle" delegate:self];
     
     
     //Step:2

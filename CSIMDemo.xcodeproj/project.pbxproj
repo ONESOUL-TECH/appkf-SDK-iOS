@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C024F4971BB10B9B00693184 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C024F4961BB10B9B00693184 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C0ADDF8D1BB0FC5700873F18 /* QZUCC.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0ADDF8B1BB0FC5700873F18 /* QZUCC.bundle */; settings = {ASSET_TAGS = (); }; };
-		C0ADDF8E1BB0FC5700873F18 /* QZUCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0ADDF8C1BB0FC5700873F18 /* QZUCC.framework */; settings = {ASSET_TAGS = (); }; };
+		C0DDF3531BB395D70030F8EF /* libOnesoul-IM-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DDF34C1BB395D70030F8EF /* libOnesoul-IM-SDK.a */; settings = {ASSET_TAGS = (); }; };
+		C0DDF3541BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0DDF3521BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle */; settings = {ASSET_TAGS = (); }; };
 		DC189C4B1BA80D6900A3582D /* detail_sms_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */; };
 		DC9CA2871BAFAA8500F53C7E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */; };
 		DCB197151BA11215007163C9 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB197121BA11215007163C9 /* Icon-60@2x.png */; };
@@ -35,8 +35,12 @@
 /* Begin PBXFileReference section */
 		C024F4951BB10B9B00693184 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C024F4961BB10B9B00693184 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		C0ADDF8B1BB0FC5700873F18 /* QZUCC.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = QZUCC.bundle; path = sdk/QZUCC.bundle; sourceTree = "<group>"; };
-		C0ADDF8C1BB0FC5700873F18 /* QZUCC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QZUCC.framework; path = sdk/QZUCC.framework; sourceTree = "<group>"; };
+		C0DDF34C1BB395D70030F8EF /* libOnesoul-IM-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libOnesoul-IM-SDK.a"; sourceTree = "<group>"; };
+		C0DDF34E1BB395D70030F8EF /* QMessageRecvInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMessageRecvInfo.h; sourceTree = "<group>"; };
+		C0DDF34F1BB395D70030F8EF /* QUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUserInfo.h; sourceTree = "<group>"; };
+		C0DDF3501BB395D70030F8EF /* QZUCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZUCC.h; sourceTree = "<group>"; };
+		C0DDF3511BB395D70030F8EF /* QZUCCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZUCCDelegate.h; sourceTree = "<group>"; };
+		C0DDF3521BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Onesoul-IM-SDK-Bundle.bundle"; sourceTree = "<group>"; };
 		DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail_sms_enable@2x.png"; sourceTree = "<group>"; };
 		DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		DCB197121BA11215007163C9 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DDF3531BB395D70030F8EF /* libOnesoul-IM-SDK.a in Frameworks */,
 				DC9CA2871BAFAA8500F53C7E /* libz.1.2.5.dylib in Frameworks */,
 				DCD698681A8C41990037116A /* libresolv.dylib in Frameworks */,
 				DCD698661A8C41880037116A /* libicucore.dylib in Frameworks */,
@@ -76,7 +81,6 @@
 				DCD698501A8C408F0037116A /* libxml2.dylib in Frameworks */,
 				DCD6984E1A8C40710037116A /* libsqlite3.dylib in Frameworks */,
 				DCD6984B1A8C40320037116A /* CoreFoundation.framework in Frameworks */,
-				C0ADDF8E1BB0FC5700873F18 /* QZUCC.framework in Frameworks */,
 				DCD6984C1A8C40320037116A /* Foundation.framework in Frameworks */,
 				DCD698481A8C402A0037116A /* UIKit.framework in Frameworks */,
 			);
@@ -85,13 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DC9CA2841BAFA99600F53C7E /* OS-CSIM-SDK */ = {
+		C0DDF34B1BB395D70030F8EF /* sdk */ = {
 			isa = PBXGroup;
 			children = (
-				C0ADDF8B1BB0FC5700873F18 /* QZUCC.bundle */,
-				C0ADDF8C1BB0FC5700873F18 /* QZUCC.framework */,
+				C0DDF34C1BB395D70030F8EF /* libOnesoul-IM-SDK.a */,
+				C0DDF34D1BB395D70030F8EF /* Onesoul-IM-SDK */,
+				C0DDF3521BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle */,
 			);
-			name = "OS-CSIM-SDK";
+			path = sdk;
+			sourceTree = "<group>";
+		};
+		C0DDF34D1BB395D70030F8EF /* Onesoul-IM-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				C0DDF34E1BB395D70030F8EF /* QMessageRecvInfo.h */,
+				C0DDF34F1BB395D70030F8EF /* QUserInfo.h */,
+				C0DDF3501BB395D70030F8EF /* QZUCC.h */,
+				C0DDF3511BB395D70030F8EF /* QZUCCDelegate.h */,
+			);
+			path = "Onesoul-IM-SDK";
 			sourceTree = "<group>";
 		};
 		DCB197111BA111A1007163C9 /* Resources */ = {
@@ -109,8 +125,8 @@
 		DCD697D71A8C3C910037116A = {
 			isa = PBXGroup;
 			children = (
+				C0DDF34B1BB395D70030F8EF /* sdk */,
 				DCD697E21A8C3C910037116A /* CSIMDemo */,
-				DC9CA2841BAFA99600F53C7E /* OS-CSIM-SDK */,
 				DCD6986C1A8C41F80037116A /* Framework */,
 				DCD697E11A8C3C910037116A /* Products */,
 			);
@@ -242,7 +258,7 @@
 			files = (
 				DC189C4B1BA80D6900A3582D /* detail_sms_enable@2x.png in Resources */,
 				DCFA74371BA124DC00B7A09C /* Default@2x.png in Resources */,
-				C0ADDF8D1BB0FC5700873F18 /* QZUCC.bundle in Resources */,
+				C0DDF3541BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle in Resources */,
 				DCB197161BA11215007163C9 /* Icon.png in Resources */,
 				DCB197171BA11215007163C9 /* Icon@2x.png in Resources */,
 				DCB197151BA11215007163C9 /* Icon-60@2x.png in Resources */,
@@ -357,6 +373,10 @@
 				INFOPLIST_FILE = QZUCCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdk",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onesoul.kfdemo;
 				PRODUCT_NAME = CSIMDemo;
@@ -380,6 +400,10 @@
 				INFOPLIST_FILE = QZUCCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/sdk",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.onesoul.kfdemo;
 				PRODUCT_NAME = CSIMDemo;

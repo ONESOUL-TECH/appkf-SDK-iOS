@@ -8,7 +8,7 @@
 
 #import "MainViewController.h"
 
-#import <QZUCC/QZUCC.h>
+#import "QZUCC.h"
 
 #define kTagButtonCall 1
 #define kTagButtonIM 2
