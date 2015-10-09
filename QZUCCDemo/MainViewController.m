@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 
+//#import <QZUCC/QZUCC.h>
 #import "QZUCC.h"
 
 #define kTagButtonCall 1
@@ -16,6 +17,22 @@
 #define kTagTextFieldAccountSeq  3
 
 #define kUserIds @[];
+
+CG_INLINE CGRect CGRectMake1(CGFloat x, CGFloat y, CGFloat width, CGFloat height)
+{
+    
+    CGRect bounds = [[UIScreen mainScreen] bounds];
+    CGFloat ScreenHeight = bounds.size.height;
+    CGFloat ScreenWidth = bounds.size.width;
+    
+    CGRect rect;
+    rect.origin.x = (ScreenHeight > 480 ? ScreenWidth/320 : 1.0)*x;
+    rect.origin.y = (ScreenHeight > 480 ? ScreenHeight/568 : 1.0)*y;
+    rect.size.width = (ScreenHeight > 480 ? ScreenWidth/320 : 1.0)*width;
+    rect.size.height = (ScreenHeight > 480 ? ScreenHeight/568 : 1.0)*height;
+    
+    return rect;
+}
 
 @interface MainViewController () <UITextFieldDelegate, UIAlertViewDelegate>
 
@@ -46,12 +63,13 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    self.title = @"App 客服 SDK Demo";
+    self.title = @"App客服SDK-Demo";
     [self setTitle:self.title withColor:[UIColor whiteColor]];
-  
+    
+    //
     UIColor *btn2Color = [UIColor blueColor];
     self.btn2 = [self buttonWithTitle:@"消息" color:btn2Color frame:CGRectZero selector:@selector(doAction:)];
-    btn2.frame = CGRectMake(15, 100, 290, 44);
+    btn2.frame = CGRectMake1(15, 100, 290, 44);
     [btn2 setImage:[UIImage imageNamed:@"detail_sms_enable"] forState:UIControlStateNormal];
     btn2.userInteractionEnabled = YES;
     btn2.tag = kTagButtonIM;
@@ -59,8 +77,8 @@
     
     //
     UIColor *btn3Color = [UIColor colorWithRed:68/255. green:171/255. blue:248/255. alpha:1.];
-    self.btn3 = [self buttonWithTitle:@"用户鉴权" color:btn3Color frame:CGRectZero selector:@selector(doLoginAction:)];
-    btn3.frame = CGRectMake(15, CGRectGetMaxY(btn2.frame) + 50, 290, 44);
+    self.btn3 = [self buttonWithTitle:@"连接服务器" color:btn3Color frame:CGRectZero selector:@selector(doLoginAction:)];
+    btn3.frame = CGRectMake1(15, CGRectGetMaxY(btn2.frame) + 50, 290, 44);
     btn3.userInteractionEnabled = YES;
     
     [self.view addSubview:btn3];
@@ -178,27 +196,33 @@
 
 - (void)doLoginAction:(UIButton *)btn
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请选择帐号并进行鉴权"
-                                                    message:nil
-                                                    /*message:@"\n\n\n\n\n"*/
-                                                   delegate:self
-                                          cancelButtonTitle:@"取消"
-                                          otherButtonTitles:@"鉴权",nil];
-    
-    
-    alert.alertViewStyle = UIAlertViewStylePlainTextInput;
-    
-    UITextField *textField = [alert textFieldAtIndex:0];
-    textField.delegate = self;
-    textField.tag = kTagTextFieldAccountSeq;
-    [textField setPlaceholder:@"请输入帐号序号(1,2,3,4,5)"];
-    textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
-    textField.keyboardType = UIKeyboardTypeNumberPad;
-    textField.returnKeyType = UIReturnKeyDone;
-    [textField becomeFirstResponder];
-    
-    [alert show];
-    [alert release];
+    QZUCC *ucc = [QZUCC getInstance];
+    if (!ucc.isLogged) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"请选择帐号并进行鉴权"
+                                                        message:nil
+                                                        /*message:@"\n\n\n\n\n"*/
+                                                       delegate:self
+                                              cancelButtonTitle:@"取消"
+                                              otherButtonTitles:@"鉴权",nil];
+        
+        
+        alert.alertViewStyle = UIAlertViewStylePlainTextInput;
+        
+        UITextField *textField = [alert textFieldAtIndex:0];
+        textField.delegate = self;
+        textField.tag = kTagTextFieldAccountSeq;
+        [textField setPlaceholder:@"请输入帐号序号(1,2,3,4,5)"];
+        textField.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
+        textField.keyboardType = UIKeyboardTypeNumberPad;
+        textField.returnKeyType = UIReturnKeyDone;
+        [textField becomeFirstResponder];
+        
+        [alert show];
+        [alert release];
+    } else {
+        [ucc disconnect];
+        [self checkAuth];
+    }
 }
 
 #pragma mark - UIAlertViewDelegate
@@ -239,8 +263,7 @@
     }
     
     int seqInt = seqText.intValue;
-    NSArray *userIds = @[@"200000211101", @"200000211102", @"200000211103", @"200000211104", @"200000211105"];
-    if (seqInt < 0 || seqInt > [userIds count]) {
+    if (seqInt < 0 || seqInt > 5) {
         UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"序号仅能在1至5范围内选择"
                                                          message:nil
                                                         delegate:self
@@ -250,10 +273,44 @@
         return;
     }
     
-    NSString *userId = [userIds objectAtIndex:seqInt - 1];
+    NSString *appkey = @"NC4xF";
+    NSString *user = nil;
+    NSString *authToken = nil;
+    switch (seqInt - 1) {
+        case 0:
+            user = @"test1";
+            authToken = @"5b461ae8325877fb938ff20a2c213a0f";
+            break;
+        case 1:
+            user = @"test2";
+            authToken = @"30cac5530de0cea8be78d871778783bf";
+            break;
+        case 2:
+            user = @"test3";
+            authToken = @"7ee683db7713a7b3ffb0a25607947850";
+            break;
+        case 3:
+            user = @"test4";
+            authToken = @"1afad02f895b18a6087cc56822677c03";
+            break;
+        case 4:
+            user = @"test5";
+            authToken = @"5c01b0e5d670dd4ebe63425ae7c7d9e7";
+            break;
+            
+        default:
+            break;
+    }
     
     QZUCC *ucc = [QZUCC getInstance];
-    [ucc connectWithUCMUrl:@"os.qyucc.com:809" qzId:userId authToken:@"" completion:^{
+    //    appKey: NC4xF , 用户列表如下：
+    //    test5 / 5c01b0e5d670dd4ebe63425ae7c7d9e7
+    //    test4 / 1afad02f895b18a6087cc56822677c03
+    //    test3 / 7ee683db7713a7b3ffb0a25607947850
+    //    test2 / 30cac5530de0cea8be78d871778783bf
+    //    test1 / 5b461ae8325877fb938ff20a2c213a0f
+    //appKey: Mi40MDEe, userName: test, Token(PasswordMD5):  c4ca4238a0b923820dcc509a6f75849b
+    [ucc connectWithUCMUrl:@"os.qyucc.com:809" appKey:appkey user:user authToken:authToken completion:^{
         
         NSLog(@"MainViewCtrl======授权成功=========");
         
@@ -281,14 +338,16 @@
     if (ucc.isLogged) {
         self.btn1.enabled = YES;
         self.btn2.enabled = YES;
-        self.btn3.enabled = NO;
-        [self.btn3 setTitle:@"已鉴权" forState:UIControlStateNormal];
-        
+        //self.btn3.enabled = NO;
+        //[self.btn3 setTitle:@"已鉴权" forState:UIControlStateNormal];
+
+        self.btn3.enabled = YES;
+        [self.btn3 setTitle:@"与服务器断开" forState:UIControlStateNormal];
     } else {
         self.btn1.enabled = NO;
         self.btn2.enabled = NO;
         self.btn3.enabled = YES;
-        [self.btn3 setTitle:@"用户鉴权" forState:UIControlStateNormal];
+        [self.btn3 setTitle:@"连接服务器" forState:UIControlStateNormal];
     }
 }
 

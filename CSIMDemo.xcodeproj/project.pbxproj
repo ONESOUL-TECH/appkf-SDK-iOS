@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C024F4971BB10B9B00693184 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C024F4961BB10B9B00693184 /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
-		C0DDF3531BB395D70030F8EF /* libOnesoul-IM-SDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0DDF34C1BB395D70030F8EF /* libOnesoul-IM-SDK.a */; settings = {ASSET_TAGS = (); }; };
-		C0DDF3541BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0DDF3521BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle */; settings = {ASSET_TAGS = (); }; };
+		C0E7B4241BC7B43D005D9A22 /* libOnesoul-IM-SDK-full.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E7B4221BC7B43D005D9A22 /* libOnesoul-IM-SDK-full.a */; settings = {ASSET_TAGS = (); }; };
+		C0E7B4251BC7B43D005D9A22 /* Onesoul-IM-SDK-Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C0E7B4231BC7B43D005D9A22 /* Onesoul-IM-SDK-Bundle.bundle */; settings = {ASSET_TAGS = (); }; };
+		C0E7B42C1BC7B674005D9A22 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0E7B42A1BC7B674005D9A22 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
 		DC189C4B1BA80D6900A3582D /* detail_sms_enable@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */; };
 		DC9CA2871BAFAA8500F53C7E /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */; };
 		DCB197151BA11215007163C9 /* Icon-60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB197121BA11215007163C9 /* Icon-60@2x.png */; };
@@ -35,12 +36,13 @@
 /* Begin PBXFileReference section */
 		C024F4951BB10B9B00693184 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		C024F4961BB10B9B00693184 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		C0DDF34C1BB395D70030F8EF /* libOnesoul-IM-SDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libOnesoul-IM-SDK.a"; sourceTree = "<group>"; };
-		C0DDF34E1BB395D70030F8EF /* QMessageRecvInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QMessageRecvInfo.h; sourceTree = "<group>"; };
-		C0DDF34F1BB395D70030F8EF /* QUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QUserInfo.h; sourceTree = "<group>"; };
-		C0DDF3501BB395D70030F8EF /* QZUCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZUCC.h; sourceTree = "<group>"; };
-		C0DDF3511BB395D70030F8EF /* QZUCCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QZUCCDelegate.h; sourceTree = "<group>"; };
-		C0DDF3521BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = "Onesoul-IM-SDK-Bundle.bundle"; sourceTree = "<group>"; };
+		C0E7B4221BC7B43D005D9A22 /* libOnesoul-IM-SDK-full.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libOnesoul-IM-SDK-full.a"; path = "sdk/libOnesoul-IM-SDK-full.a"; sourceTree = "<group>"; };
+		C0E7B4231BC7B43D005D9A22 /* Onesoul-IM-SDK-Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = "Onesoul-IM-SDK-Bundle.bundle"; path = "sdk/Onesoul-IM-SDK-Bundle.bundle"; sourceTree = "<group>"; };
+		C0E7B4261BC7B453005D9A22 /* QMessageRecvInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QMessageRecvInfo.h; path = sdk/include/QMessageRecvInfo.h; sourceTree = "<group>"; };
+		C0E7B4271BC7B453005D9A22 /* QUserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QUserInfo.h; path = sdk/include/QUserInfo.h; sourceTree = "<group>"; };
+		C0E7B4281BC7B453005D9A22 /* QZUCC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QZUCC.h; path = sdk/include/QZUCC.h; sourceTree = "<group>"; };
+		C0E7B4291BC7B453005D9A22 /* QZUCCDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QZUCCDelegate.h; path = sdk/include/QZUCCDelegate.h; sourceTree = "<group>"; };
+		C0E7B42B1BC7B674005D9A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DC189C4A1BA80D6900A3582D /* detail_sms_enable@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail_sms_enable@2x.png"; sourceTree = "<group>"; };
 		DC9CA2861BAFAA8500F53C7E /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		DCB197121BA11215007163C9 /* Icon-60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-60@2x.png"; sourceTree = "<group>"; };
@@ -71,12 +73,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0DDF3531BB395D70030F8EF /* libOnesoul-IM-SDK.a in Frameworks */,
 				DC9CA2871BAFAA8500F53C7E /* libz.1.2.5.dylib in Frameworks */,
 				DCD698681A8C41990037116A /* libresolv.dylib in Frameworks */,
 				DCD698661A8C41880037116A /* libicucore.dylib in Frameworks */,
 				DCD698621A8C41630037116A /* AVFoundation.framework in Frameworks */,
 				DCD6985C1A8C410C0037116A /* CoreText.framework in Frameworks */,
+				C0E7B4241BC7B43D005D9A22 /* libOnesoul-IM-SDK-full.a in Frameworks */,
 				DCD698541A8C40D80037116A /* CFNetwork.framework in Frameworks */,
 				DCD698501A8C408F0037116A /* libxml2.dylib in Frameworks */,
 				DCD6984E1A8C40710037116A /* libsqlite3.dylib in Frameworks */,
@@ -89,25 +91,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C0DDF34B1BB395D70030F8EF /* sdk */ = {
+		C0E7B4201BC7B40E005D9A22 /* Onesoul-IM-SDK */ = {
 			isa = PBXGroup;
 			children = (
-				C0DDF34C1BB395D70030F8EF /* libOnesoul-IM-SDK.a */,
-				C0DDF34D1BB395D70030F8EF /* Onesoul-IM-SDK */,
-				C0DDF3521BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle */,
+				C0E7B4211BC7B414005D9A22 /* include */,
+				C0E7B4221BC7B43D005D9A22 /* libOnesoul-IM-SDK-full.a */,
+				C0E7B4231BC7B43D005D9A22 /* Onesoul-IM-SDK-Bundle.bundle */,
 			);
-			path = sdk;
+			name = "Onesoul-IM-SDK";
 			sourceTree = "<group>";
 		};
-		C0DDF34D1BB395D70030F8EF /* Onesoul-IM-SDK */ = {
+		C0E7B4211BC7B414005D9A22 /* include */ = {
 			isa = PBXGroup;
 			children = (
-				C0DDF34E1BB395D70030F8EF /* QMessageRecvInfo.h */,
-				C0DDF34F1BB395D70030F8EF /* QUserInfo.h */,
-				C0DDF3501BB395D70030F8EF /* QZUCC.h */,
-				C0DDF3511BB395D70030F8EF /* QZUCCDelegate.h */,
+				C0E7B4261BC7B453005D9A22 /* QMessageRecvInfo.h */,
+				C0E7B4271BC7B453005D9A22 /* QUserInfo.h */,
+				C0E7B4281BC7B453005D9A22 /* QZUCC.h */,
+				C0E7B4291BC7B453005D9A22 /* QZUCCDelegate.h */,
 			);
-			path = "Onesoul-IM-SDK";
+			name = include;
 			sourceTree = "<group>";
 		};
 		DCB197111BA111A1007163C9 /* Resources */ = {
@@ -125,7 +127,7 @@
 		DCD697D71A8C3C910037116A = {
 			isa = PBXGroup;
 			children = (
-				C0DDF34B1BB395D70030F8EF /* sdk */,
+				C0E7B4201BC7B40E005D9A22 /* Onesoul-IM-SDK */,
 				DCD697E21A8C3C910037116A /* CSIMDemo */,
 				DCD6986C1A8C41F80037116A /* Framework */,
 				DCD697E11A8C3C910037116A /* Products */,
@@ -143,10 +145,11 @@
 		DCD697E21A8C3C910037116A /* CSIMDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C024F4951BB10B9B00693184 /* MainViewController.h */,
-				C024F4961BB10B9B00693184 /* MainViewController.m */,
 				DCD697E71A8C3C910037116A /* AppDelegate.h */,
 				DCD697E81A8C3C910037116A /* AppDelegate.m */,
+				C024F4951BB10B9B00693184 /* MainViewController.h */,
+				C024F4961BB10B9B00693184 /* MainViewController.m */,
+				C0E7B42A1BC7B674005D9A22 /* LaunchScreen.xib */,
 				DCB197111BA111A1007163C9 /* Resources */,
 				DCD697E31A8C3C910037116A /* Supporting Files */,
 			);
@@ -225,7 +228,7 @@
 		DCD697D81A8C3C910037116A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = onesoul.cn;
 				TargetAttributes = {
 					DCD697DF1A8C3C910037116A = {
@@ -258,11 +261,12 @@
 			files = (
 				DC189C4B1BA80D6900A3582D /* detail_sms_enable@2x.png in Resources */,
 				DCFA74371BA124DC00B7A09C /* Default@2x.png in Resources */,
-				C0DDF3541BB395D70030F8EF /* Onesoul-IM-SDK-Bundle.bundle in Resources */,
+				C0E7B4251BC7B43D005D9A22 /* Onesoul-IM-SDK-Bundle.bundle in Resources */,
 				DCB197161BA11215007163C9 /* Icon.png in Resources */,
 				DCB197171BA11215007163C9 /* Icon@2x.png in Resources */,
 				DCB197151BA11215007163C9 /* Icon-60@2x.png in Resources */,
 				DCFA74361BA124DC00B7A09C /* Default.png in Resources */,
+				C0E7B42C1BC7B674005D9A22 /* LaunchScreen.xib in Resources */,
 				DCFA74351BA124DC00B7A09C /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,6 +285,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C0E7B42A1BC7B674005D9A22 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C0E7B42B1BC7B674005D9A22 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DCD698041A8C3C910037116A /* Debug */ = {
@@ -362,8 +377,8 @@
 		DCD698071A8C3C910037116A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -382,15 +397,15 @@
 				PRODUCT_NAME = CSIMDemo;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s arm64 x86_64";
 			};
 			name = Debug;
 		};
 		DCD698081A8C3C910037116A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -409,7 +424,7 @@
 				PRODUCT_NAME = CSIMDemo;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = 1;
-				VALID_ARCHS = armv7;
+				VALID_ARCHS = "armv7 armv7s arm64 x86_64";
 			};
 			name = Release;
 		};
